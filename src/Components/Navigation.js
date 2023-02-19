@@ -40,8 +40,21 @@ function Navigation() {
               className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow"
             >
               <ul>
-                <NavigationMenu label="Home" href="/" />
-                <NavigationMenu label="About" href="/about" />
+                <NavigationMenu
+                  onClose={() => setShowNav(false)}
+                  label="Home"
+                  href="/"
+                />
+                <NavigationMenu
+                  onClose={() => setShowNav(false)}
+                  label="About"
+                  href="/about"
+                />
+                <NavigationMenu
+                  onClose={() => setShowNav(false)}
+                  label="Product"
+                  href="/products"
+                />
               </ul>
             </animated.div>
           )
